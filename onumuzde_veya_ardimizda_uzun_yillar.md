@@ -19,3 +19,5 @@ Fikirlerinizi almak isterim.
 Teşekkürler.
 
 https://procyberian.xyz/pipermail/hackathon_procyberian.xyz/2024-September/000015.html
+
+Ayrıca bakınız > https://www.youtube.com/watch?v=LWYmGhIFy-A ve https://www.youtube.com/watch?v=JWcr4TwcupA
