@@ -45,4 +45,4 @@ Milis Linux, yerli bir çözüm arayanlar için etkileyici bir seçenektir. Hafi
 
 Siz de Milis Linux'u deneyin ve Türkiye'nin özgün Linux dağıtımına katkıda bulunun!
 
-Daha fazla bilgi için Milis Linux Resmi Sitesi'ni ziyaret edin.
+[Resmi web sitesi](https://milislinux.gitlab.io/) üzerinden [Milis Linux](https://milislinux.gitlab.io/) hakkında detaylı bilgilere ulaşabilir, indirme ve kurulum dosyalarına erişebilirsiniz.
