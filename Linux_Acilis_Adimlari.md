@@ -19,3 +19,5 @@ Bir Linux işletim sistemi açılırken temel olacak aşağıdaki adımları izl
 7-Sistem bir dizi başlangıç komut dosyası çalıştırır ve ortamı yapılandırır.
 
 8-Kullanıcılara bir oturum açma penceresi sunulur ve sistem artık giriş için hazırdır.
+
+![Linux Açılış Adımları](img/Linux_Acilis_Adimlari.png)
