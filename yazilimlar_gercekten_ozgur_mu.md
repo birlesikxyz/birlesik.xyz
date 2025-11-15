@@ -23,3 +23,6 @@ Sevdiğimiz işi, özgürce yapabilmek için sadece kod yazmamız artık yetmiyo
 Özgür yazılımcılar olarak gerçekten hala üretim aracımızın sahibi miyiz? Yoksa büyük yazılım tekellerinin kullanışlı araçları haline mi geldik?
 
 Etiketler: #özgüryazılım #açıkkaynakkod #özgürlük #gnu #freesoftware #oss #foss #opensource
+
+14 Kasım 2025
+Doruk Fişek
