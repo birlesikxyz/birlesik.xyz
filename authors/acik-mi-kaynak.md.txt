@@ -1,0 +1,73 @@
+---
+title: "Açık mı kaynak?: Bitmeyen bir kavram kargaşası"
+description: >
+ Özgür yazılımlar genellikle ücretsiz olarak indirilebildiği gibi, kaderin bir cilvesi ki dünyanın neredeyse bütün dillerinden farklı olarak _lingua franca_ İngilizcede "bedava" ve "özgür" sıfatları için aynı kelime kullanılıyor; bu da kaçınılmaz olarak özellikle sıradan kullanıcıların, daha önceden "edinilen bir şey" söz konusu olduğunda aşina olduğu "bedava" sıfatını yazılımlara "özgür" sıfatından daha uygun görmesine sebep oluyor. Ama aslında buna benzer İngilizcede olmayan bir dilsel karışıklık **Türkçede var**.
+categories: ["teknik"]
+tags: ["teknik", "özgür yazılım", "açık kaynak"]
+author: Özcan Oğuz
+date: 2025-01-18T20:15:32+03:00
+cover: img/open.jpg
+draft: false
+---
+Öyle fazla geçmişe gitmeye gerek yok, oturup bana üç gün önce sorsanız, açık kaynak üzerine bir yazı kaleme alacağım aklımın ucundan geçmezdi herhalde. Yirmi yıla yaklaşan süredir özgür yazılım-açık kaynak ayrılığında özgür yazılım için mücadele ettiğimi, bu mücadele için yeri gelince [dernek](https://oyd.org.tr) kurup, [kimilerine](https://lkd.org.tr) üye olup, neredeyse altı ayda bir bu konuda [eğitimler](https://kamp.linux.org.tr) verdiğimi göz önüne alınca, hayatımın bir noktasında "açık kaynağı" savunacağımı hiç düşünmezdim; ama o gün bugünmüş.
+
+Her şeyden önce "ne o Özcan, kafana taş mı düştü?" diye soracak arkadaşlar için bir not düşeyim: Özgür yazılım aslında bu yazının temel öznesi değil. Açık kaynak etrafında yaşanan bir kafa ve kavram karışıklığının özgür yazılımı da etkilemesi sebebiyle bu yazıyı yazmaya ve bu savunuyu yapmaya karar verdim, çatışmada tarafım elbette ki hala aynı :)
+
+>The word “free” has two legitimate general meanings; it can refer either to freedom or to price. When we speak of “free software,” we're talking about freedom, not price. (Think of “free speech,” not “free beer.”) Specifically, it means that a user is free to run the program, study and change the program, and redistribute the program with or without changes.
+>
+> -- GNU Project
+
+Özgür yazılım, açık kaynak gibi kavramlarla hayatında ilk kez karşılaşan her insanın, hatta yalnızca bu da değil, bilgisayar kullanıp da herhangi bir yazılım indirmeye karar vermiş hemen hemen herkesin "free software" ifadesini görünce "free" kelimesini "bedava" olarak yorumlaması gayet doğal ve beklendik bir şey. Çünkü özgür yazılımlar genellikle ücretsiz olarak indirilebildiği gibi, kaderin bir cilvesi ki dünyanın neredeyse bütün dillerinden farklı olarak _lingua franca_ İngilizcede "bedava" ve "özgür" sıfatları için aynı kelime kullanılıyor; bu da kaçınılmaz olarak özellikle sıradan kullanıcıların, daha önceden "edinilen bir şey" söz konusu olduğunda aşina olduğu "bedava" sıfatını yazılımlara "özgür" sıfatından daha uygun görmesine sebep oluyor. Türkçe, Kürtçe, Lazca, Fransızca, İtalyanca gibi pek çok dilde bu iki sıfat iki ayrı kelimeyle ifade edilse de maalesef İnternet'te var olan verinin çok önemli bir kısmı İngilizce olduğundan bu karmaşa farklı dillere de yayılıyor, en azından farklı dillerde de tartışılıyor.
+
+Ama aslında buna benzer İngilizcede olmayan bir dilsel karışıklık **Türkçede var**.
+
+Bunu aslında ilk olarak 2019 Özgür Yazılım Yaz Kampı'nda fark etmiştim, kampta ilk defa [Mustafa abi](https://twitter.com/elasticroot) bir MongoDB kursu açacaktı ve o dönemin tartışması MongoDB'nin [yeni lisansı](https://www.zdnet.com/article/its-mongodbs-turn-to-change-its-open-source-license/)ydı. Başından beri [GNU AGPL](https://www.gnu.org/licenses/agpl-3.0.html) kullanan bir özgür yazılım olan MongoDB, çok radikal bir kararla lisansını kendi yazdıkları [SSPL](https://www.mongodb.com/licensing/server-side-public-license) (Server Side Public License) isimli bir lisans ile değiştiriyor ve bu o dönem adeta bir bomba etkisi yaratıyordu. Lisans en basit şekliyle AGPL'e bir madde daha ekliyor ve yazılımın <abbr title="Software-as-a-Service">SaaS</abbr> olarak dağıtılması halinde ilgili SaaS platformunun da tüm altyapısının özgür yazılım olmasını zorunlu kılıyordu. Tam biz kampa hazırlanırken, tartışmalar genelde bu lisansın bir özgür yazılım ya da açık kaynak lisansı olarak değerlendirilip değerlendirilemeyeceği konusunda devam ediyordu. Nitekim aradan 7 sene geçti ve MongoDB-AWS savaşı ile başlayan garip lisans modelleri Elasticsearch, Terraform derken çok ciddi bir etki yarattığı gibi pek çok derin sorunu da beraberinde getirmiş oldu. 
+
+SSPL ise [Açık Kaynak İnisiyatifi](https://opensource.org) tarafından **"açık kaynak lisansı" olarak değerlendirilmedi.**
+
+Hmm, burada bir duruyoruz. Ne demek açık kaynak **değil**, e _kaynak kodu ortada_ işte?
+
+---
+
+Bu yazıyı yazmaya karar verme sebebim, çok sevgili [Fatih](https://twitter.com/fkadev)'in attığı şu tweet ve altında dönen tartışmalar oldu aslında.
+
+{{< twitter user="fkadev" id="1880309798404780198" >}}
+
+Alıntılanan tweette `Cursor.new` isimli bir projenin "public" yapıldığı bir [GitHub](https://github.com/yavuzyalcintas/cursornew) bağlantısı ile birlikte paylaşılmış. Buraya kadar her şey normal, bağlantıya gittiğimizde herkese açık bir Git deposu ve yazılımın kaynak kodu var, _README_ dosyasını okumaya başlıyoruz; **o da ne**? 
+
+>This project is proprietary software licensed under the Cursor New Proprietary License - see the LICENSE file for details. The software is not open source and requires a valid license for use. For licensing inquiries, please contact <email>.
+
+Bize proje mülk yazılımdır, açık kaynak değildir diyor?! Özgür değil anladık da, nasıl açık kaynak olamaz?!
+
+İşte Türkçedeki kavram kargaşası tam olarak bu: İngilizcede _open source software_ ve _source-available software_ olarak ifade edilen iki ayrı kavram, maalesef Türkçede **açık kaynak** yazılım ve **açık kaynak kodlu** yazılım olarak ifade ediliyor[^1]. Şimdi kavramlar netleşmeye başladıysa bir tur üzerinden geçelim:
+
+* **Açık kaynak yazılım**: Özgür yazılım hareketinden 1998 yılında _politik sebeplerden_ ayrılan Açık Kaynak topluluğu tarafından yazılan 10 maddelik [Açık Kaynak Tanımı](https://opensource.org/osd)'na uyan lisanslarla lisanslanmış yazılımlar. Açık kaynak tanımı çok büyük ölçüde [özgür yazılım tanımı](https://oyd.org.tr/yazilar/ozgur-yazilim/) ile örtüşür, ancak farklı bir perspektiften[^2] yazılmıştır. Dolayısıyla bir yazılıma açık kaynak diyebilmek için kaynak kodunun açık olması yetmez, tanımdaki esasları da sağlamak zorundadır.
+* **Açık kaynak kodlu yazılım**: Özgür yazılım ya da açık kaynak hareketi ile ilgisi olmayan, hatta bir hareket de olmayan, kaynak kodu erişilebilir durumda olan yazılımlara verilen isim. Kaynak kodunun erişilebilir olması kullanıcıyla ilgili yazılım üzerinde **hiçbir hak sağlamaz**.
+
+Yani örneğin, aslında açık kaynak sandığımız [Akaunting](https://github.com/akaunting/akaunting/blob/master/LICENSE.txt) veya [Terraform](https://github.com/hashicorp/terraform/blob/main/LICENSE) gibi [Business Source License](https://mariadb.com/bsl11/) ile lisanslanmış yazılımlar ya da [MongoDB](https://github.com/mongodb/mongo) veya [Redis](https://github.com/redis/redis) gibi [SSPL](https://www.mongodb.com/legal/licensing/server-side-public-license) ile lisanslanmış yazılımlar; açık kaynak değil, açık kaynak kodlu yazılımlar[^3]. 
+
+Kapatmadan önce, bu konu konuşulurken sevgili [Eser](https://twitter.com/eserozvataf)'in tartışmaya dahil olduğu şu tweete de değinmekte yarar görüyorum: 
+
+{{< twitter user="eserozvataf" id="1880550797517414609" >}}
+
+Bir yazılımı özgür ya da açık kaynak yapan şey, kaynak koduna erişilebilirlik değil; yazılımın **lisansıdır**. 
+
+Bu sebeple, lisansı olmayan yazılımlar[^4] ve Git depoları da aslında açık kaynak olmuyor. Son yıllarda özellikle GitHub'ın bu konudaki UX geliştirmeleri ve medya etkisi sebebiyle lisansı olmayan yazılımlarda düşüş olsa da, hala GitHub lisans kullanım sıklığı istatistiklerinde lisanssız depolar dünyada ve Türkiye'de dördüncü sırada[^5]. 
+
+{{< figure src="/img/rect6726.png" alt="Türkiye için GitHub lisans kullanım istatistikleri grafiği" position="center" caption="Türkiye için GitHub lisans kullanım istatistikleri grafiği" captionPosition="center" >}}
+
+Bu tartışmadan çıkardığım özeleştiri, özellikle maalesef ki MongoDB'nin SSPL atağı sonrasında ilmek ilmek ilerleyen _source available_ tehlikesine özgür yazılım ve açık kaynak toplulukları olarak doğru zaman ve şekilde bir eleştiri getirip bu konuyu gündem edemeyişimiz oldu benim için. Ne olursa olsun özgür yazılım cephesinde de açık kaynak hareketinde de olsak, bu topluluklara ve insanlığa katkı vermek isteyen yeni gelenlere bu farkı daha iyi anlatmamız gerekiyor diye düşünüyorum. Ayrıca yazılım geliştirmeye yakın zamanda başlayan ve GitHub gibi alanlarda notlarını, projelerini yayınlayabilecek seviyeye gelmiş bireylere de yol gösterirken, lisanslama konusuna da temel konulardan biri olarak değinmek herkes için çok daha faydalı olacaktır. Bunun için de bir rehber hazırlama fikri aklıma geldi, ilk fırsatta bununla ilgili de çalışacağım.
+
+2025 yılının ilk yazısı bu oldu, madem öyle bu da [#100DaysToOffload](https://100daystooffload.com) için ilk yazı olsun 🎉
+
+_Bu konularda daha fazla okuma yapmak isterseniz, aşağıya bazı bağlantılar bırakıyorum:_
+* <https://oyd.org.tr/yazilar/>
+* <https://www.gnu.org/philosophy/philosophy.html>
+* <https://opensource.org/osd>
+
+---
+[^1]: Bu karmaşanın nasıl oluştuğunu tarihsel olarak bilmesem de, akademideki _açık erişim_ tayfasının sebep olduğuna inanıyorum. 
+[^2]: Özgür yazılım tanımı, dört tane özgürlüğü belirtir ve neredeyse tamamen kullanıcının özgürlüğünü temel alır; doğrudan "yazılım" kavramını ön plana almaz. Açık kaynak tanımı ise yazılımları teknik taraflarıyla ele alır (ör. kaynak kodu okunamaz hale getirilmemelidir der).
+[^3]: Özgür yazılım olup olmamaları bu yazının konusu değil, bu konuda kesin bir tanım da yok ancak tanımlar ve sağduyu ışığında SSPL'i özgür yazılım lisansı olarak kabul etmek gerekeceği kanısındayım. OSI'nin, SSPL'in açık kaynak lisansı olmadığına karar verme sebebini "lisansın şirketlere karşı olan agresif tutumu" olarak açıklamasını göz önünde bulundurmakta yarar var.
+[^4]: [Unlicense](https://unlicense.org) diye bir şey de var, ama o bir lisans. Evet kavram karmaşası asla bitmez.
+[^5]: <https://innovationgraph.github.com/global-metrics/licenses>
