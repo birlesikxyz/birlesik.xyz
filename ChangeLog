@@ -1,0 +1,80 @@
+# Değişiklik Günlüğü (ChangeLog)
+
+Birleşik Dergi yazı deposunda en başından bugüne yapılan değişiklikler, tarih sırasıyla (eskiden yeniye) aşağıda Türkiye Türkçesiyle anlatılmıştır.
+
+## 2026-10-26
+- Aile ve bilişim konulu yeni içerik eklendi: `authors/aile/` altında "Çocuklar Neden Bağımlı Olur?" yazısı (Markdown ve PDF) ile eski PDF sürümü.
+
+## 2026-08-12
+- Genel güncelleme yapıldı.
+
+## 2026-05-02
+- "Özgür Yazılım ve Kapsayıcılık" yazısı (Markdown ve HTML) `authors/` altına eklendi.
+
+## 2026-03-08
+- Özcan Oğuz'un "Açık mı Kaynak?" yazısı ve ilgili görselleri eklendi.
+- Arama algoritmaları yazısı ve görseli ile Özgür Yazılım topluluk yazısı ve görseli eklendi.
+
+## 2026-03-07
+- GNU logosu eklendi.
+- "Özgür Yaşam" yazısı HTML biçimine çevrildi; dosya adları `ozgur_yasam.md` ve `ozgur_yasam.html` olarak yenilendi.
+- Dergi için "Yayım Politikamız" belgesi eklendi.
+
+## 2026-02-22
+- Eski blog yazıları `old/` dizinine, bizim yazdığımız güncel yazılar `core/` dizinine taşındı.
+
+## 2025-11-15
+- Doruk Fişek'in "Yazılımlar Gerçekten Özgür mü?" yazısı (LinkedIn'deki özgün yazısına atıfla) eklendi.
+
+## 2025-11-08
+- "Linux Açılış Adımları" yazısı düzenlendi ve içine görseller eklendi.
+
+## 2025-11-07
+- Eski `.asc` dosyaları silindi.
+- Milis Linux ve "Özgür Yaşam" yazıları eklendi.
+- Malik Dündar'ın katkısıyla (birleştirme isteği #2) "Linux Önyükleme Adımları" eklendi; Markdown biçimine dönüştürüldü, düzenlendi ve yazım hataları giderildi.
+- Arama algoritmaları yazısı eklendi.
+
+## 2025-11-06
+- Muha Aliss'in katkısıyla (birleştirme isteği #1) "Özgür Yazılım: Bir Yaşama Biçimi Olarak Özgürlük" yazısı eklendi.
+
+## 2025-10-08
+- DistroWatch haber bağlantısı eklendi.
+
+## 2025-03-24
+- Dergimizin yayın politikasına dair belge eklendi.
+
+## 2025-03-23
+- Genel güncelleme yapıldı.
+
+## 2025-02-27
+- Bradley M. Kuhn ve Richard M. Stallman'ın "Özgürlük mü, Güç mü?" yazısının Türkçe çevirisi eklendi (GNU www-tr çeviri ekibiyle birlikte sürdürülmektedir).
+
+## 2025-02-03
+- Video bağlantısı eklendi.
+
+## 2024-12-08
+- VoSToK64 tarafından Milis Linux tanıtım yazısı eklendi; yazı Ali Kırlı'ya ait olup Mert Gör tarafından düzenlendi, bağlantılar düzeltildi.
+
+## 2024-12-05
+- "Hacker nasıl olunur?" (hacker how-to) yazısı eklendi.
+
+## 2024-12-02
+- VoSToK64 tarafından haber eklendi ve birleştirildi.
+
+## 2024-11-30
+- OpenStreetMap yazısı eklendi.
+
+## 2024-11-28
+- Mozilla Firefox'un Linux sürümlerini tar.xz olarak sunmasına ilişkin haber ve güncelleme eklendi.
+- Paketleme tercihi konusunda yazı yeniden yazıldı.
+
+## 2024-11-10
+- Yeni logo eklendi.
+
+## 2024-09-25
+- Procyberian hackathon e-posta listesi bağlantısı ve ilgili video bağlantıları eklendi.
+
+## 2024-08-27
+- Birleşik XYZ WordPress yazılarının ilk toplu aktarımı yapıldı.
+- README dosyası eklendi.
